@@ -1,0 +1,9 @@
+{
+  "name": "FurryFGG 风光狗",
+  "short_name": "FurryFGG",
+  "description": "风光狗的摄影、飞行与创作小站",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f8fe8"
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f8fe8" />
+    <meta
+      name="description"
+      content="FurryFGG 风光狗的摄影作品集，收录风光类与福瑞 Furry 摄影。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="摄影作品 · FurryFGG 风光狗" />
+    <meta
+      property="og:description"
+      content="FurryFGG 的风光类与福瑞 Furry 摄影作品。"
+    />
+    <meta property="og:url" content="https://furryfgg.com/gallery.html" />
+    <title>摄影作品 · FurryFGG 风光狗</title>
+    <link rel="canonical" href="https://furryfgg.com/gallery.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#gallery-main">跳到主要内容</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="返回首页">
+        <span>FurryFGG</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="打开导航"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        data-menu-toggle
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="作品导航" data-nav>
+        <a href="index.html">首页</a>
+        <a href="#landscape" data-gallery-link="landscape">风光类</a>
+        <a href="#furry" data-gallery-link="furry">福瑞 Furry</a>
+      </nav>
+    </header>
+
+    <main id="gallery-main">
+      <section class="gallery-hero" aria-labelledby="gallery-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="gallery-hero-inner">
+          <p class="section-number">PHOTOGRAPHY / ARCHIVE</p>
+          <h1 id="gallery-title">摄影作品</h1>
+          <p>这里将收录两类作品：城市与自然风光，以及福瑞 Furry 摄影。</p>
+        </div>
+      </section>
+
+      <section class="gallery-section" aria-labelledby="gallery-tabs-title">
+        <div class="section-inner">
+          <h2 class="visually-hidden" id="gallery-tabs-title">作品分类</h2>
+
+          <div class="gallery-tabs" id="gallery-tabs" role="tablist" aria-label="作品分类">
+            <button
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="landscape"
+              id="tab-landscape"
+              data-gallery-tab="landscape"
+            >风光类</button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="furry"
+              id="tab-furry"
+              tabindex="-1"
+              data-gallery-tab="furry"
+            >福瑞 Furry</button>
+          </div>
+
+          <section
+            class="gallery-panel"
+            id="landscape"
+            role="tabpanel"
+            aria-labelledby="tab-landscape"
+            data-gallery-panel="landscape"
+          >
+            <div class="gallery-panel-heading">
+              <p class="section-number">01 / LANDSCAPE</p>
+              <h2>风光类</h2>
+              <p>作品稍后补充</p>
+            </div>
+            <div class="gallery-grid">
+              <article class="gallery-placeholder reveal"><span>01</span><p>风光作品</p></article>
+              <article class="gallery-placeholder gallery-placeholder-blue reveal"><span>02</span><p>风光作品</p></article>
+              <article class="gallery-placeholder reveal"><span>03</span><p>风光作品</p></article>
+              <article class="gallery-placeholder gallery-placeholder-yellow reveal"><span>04</span><p>风光作品</p></article>
+              <article class="gallery-placeholder gallery-placeholder-blue reveal"><span>05</span><p>风光作品</p></article>
+              <article class="gallery-placeholder reveal"><span>06</span><p>风光作品</p></article>
+            </div>
+          </section>
+
+          <section
+            class="gallery-panel"
+            id="furry"
+            role="tabpanel"
+            aria-labelledby="tab-furry"
+            data-gallery-panel="furry"
+            hidden
+          >
+            <div class="gallery-panel-heading">
+              <p class="section-number">02 / FURRY</p>
+              <h2>福瑞 Furry</h2>
+              <p>作品稍后补充</p>
+            </div>
+            <div class="gallery-grid">
+              <article class="gallery-placeholder gallery-placeholder-yellow reveal"><span>01</span><p>福瑞作品</p></article>
+              <article class="gallery-placeholder reveal"><span>02</span><p>福瑞作品</p></article>
+              <article class="gallery-placeholder gallery-placeholder-blue reveal"><span>03</span><p>福瑞作品</p></article>
+              <article class="gallery-placeholder reveal"><span>04</span><p>福瑞作品</p></article>
+              <article class="gallery-placeholder gallery-placeholder-yellow reveal"><span>05</span><p>福瑞作品</p></article>
+              <article class="gallery-placeholder gallery-placeholder-blue reveal"><span>06</span><p>福瑞作品</p></article>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year>2026</span> FurryFGG</p>
+      <a href="index.html">返回个人主页</a>
+    </footer>
+  </body>
+</html>

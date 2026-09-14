@@ -1,0 +1,12 @@
+# Keep source material locally; publish only optimized web assets.
+个人介绍.txt
+联系方式.txt
+狗啃饼干.png
+我钱呢.png
+友链背景.png
+assets/
+
+# Local development files.
+.DS_Store
+Thumbs.db
+.vscode/
