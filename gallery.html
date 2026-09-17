@@ -6,21 +6,23 @@
     <meta name="theme-color" content="#4f8fe8" />
     <meta
       name="description"
-      content="FurryFGG 风光狗的摄影作品集，收录风光类与福瑞 Furry 摄影。"
+      content="FurryFGG 风光狗的摄影作品集，收录风光、福瑞 Furry 与飞机摄影。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="摄影作品 · FurryFGG 风光狗" />
     <meta
       property="og:description"
-      content="FurryFGG 的风光类与福瑞 Furry 摄影作品。"
+      content="FurryFGG 的风光、福瑞 Furry 与飞机摄影作品。"
     />
     <meta property="og:url" content="https://furryfgg.com/gallery.html" />
     <title>摄影作品 · FurryFGG 风光狗</title>
     <link rel="canonical" href="https://furryfgg.com/gallery.html" />
+    <script>document.documentElement.classList.add("has-js");</script>
     <link rel="stylesheet" href="styles.css" />
+    <script src="gallery-data.js" defer></script>
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body id="gallery-top">
     <a class="skip-link" href="#gallery-main">跳到主要内容</a>
 
     <header class="site-header" data-header>
@@ -43,8 +45,9 @@
 
       <nav class="site-nav" id="site-nav" aria-label="作品导航" data-nav>
         <a href="index.html">首页</a>
-        <a href="#landscape" data-gallery-link="landscape">风光类</a>
+        <a href="#landscape" data-gallery-link="landscape">风光</a>
         <a href="#furry" data-gallery-link="furry">福瑞 Furry</a>
+        <a href="#aircraft" data-gallery-link="aircraft">飞机</a>
       </nav>
     </header>
 
@@ -54,7 +57,7 @@
         <div class="gallery-hero-inner">
           <p class="section-number">PHOTOGRAPHY / ARCHIVE</p>
           <h1 id="gallery-title">摄影作品</h1>
-          <p>这里将收录两类作品：城市与自然风光，以及福瑞 Furry 摄影。</p>
+          <p>这里收录城市与自然风光、福瑞 Furry，以及飞机摄影。</p>
         </div>
       </section>
 
@@ -70,7 +73,7 @@
               aria-controls="landscape"
               id="tab-landscape"
               data-gallery-tab="landscape"
-            >风光类</button>
+            >风光</button>
             <button
               type="button"
               role="tab"
@@ -80,6 +83,15 @@
               tabindex="-1"
               data-gallery-tab="furry"
             >福瑞 Furry</button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="aircraft"
+              id="tab-aircraft"
+              tabindex="-1"
+              data-gallery-tab="aircraft"
+            >飞机</button>
           </div>
 
           <section
@@ -91,17 +103,33 @@
           >
             <div class="gallery-panel-heading">
               <p class="section-number">01 / LANDSCAPE</p>
-              <h2>风光类</h2>
-              <p>作品稍后补充</p>
+              <h2>风光</h2>
+              <p>照片正在持续更新w （仅部分精选照片）</p>
             </div>
-            <div class="gallery-grid">
-              <article class="gallery-placeholder reveal"><span>01</span><p>风光作品</p></article>
-              <article class="gallery-placeholder gallery-placeholder-blue reveal"><span>02</span><p>风光作品</p></article>
-              <article class="gallery-placeholder reveal"><span>03</span><p>风光作品</p></article>
-              <article class="gallery-placeholder gallery-placeholder-yellow reveal"><span>04</span><p>风光作品</p></article>
-              <article class="gallery-placeholder gallery-placeholder-blue reveal"><span>05</span><p>风光作品</p></article>
-              <article class="gallery-placeholder reveal"><span>06</span><p>风光作品</p></article>
+            <div class="gallery-album-index" aria-label="风光相册分类">
+              <p>ALBUM INDEX</p>
+              <ul>
+                <li><a href="#album-landscape"><span>01</span><strong>风光</strong></a></li>
+                <li><a href="#album-aerial"><span>02</span><strong>航拍</strong></a></li>
+              </ul>
             </div>
+            <section class="gallery-album" aria-labelledby="album-landscape">
+              <div class="gallery-album-heading">
+                <p>01 / LANDSCAPE</p>
+                <h3 id="album-landscape">风光</h3>
+                <p><span data-photo-count="landscape">0</span> 张</p>
+              </div>
+              <div class="gallery-grid" data-photo-grid="landscape"></div>
+            </section>
+            <section class="gallery-album" aria-labelledby="album-aerial">
+              <div class="gallery-album-heading">
+                <p>02 / AERIAL</p>
+                <h3 id="album-aerial">航拍</h3>
+                <p><span data-photo-count="aerial">0</span> 张</p>
+              </div>
+              <div class="gallery-grid" data-photo-grid="aerial"></div>
+            </section>
+            <noscript><p class="gallery-noscript">请启用 JavaScript 以浏览完整摄影作品。</p></noscript>
           </section>
 
           <section
@@ -115,16 +143,111 @@
             <div class="gallery-panel-heading">
               <p class="section-number">02 / FURRY</p>
               <h2>福瑞 Furry</h2>
-              <p>作品稍后补充</p>
+              <p>照片正在持续更新w （仅部分精选照片）</p>
             </div>
-            <div class="gallery-grid">
-              <article class="gallery-placeholder gallery-placeholder-yellow reveal"><span>01</span><p>福瑞作品</p></article>
-              <article class="gallery-placeholder reveal"><span>02</span><p>福瑞作品</p></article>
-              <article class="gallery-placeholder gallery-placeholder-blue reveal"><span>03</span><p>福瑞作品</p></article>
-              <article class="gallery-placeholder reveal"><span>04</span><p>福瑞作品</p></article>
-              <article class="gallery-placeholder gallery-placeholder-yellow reveal"><span>05</span><p>福瑞作品</p></article>
-              <article class="gallery-placeholder gallery-placeholder-blue reveal"><span>06</span><p>福瑞作品</p></article>
+            <div class="gallery-album-index" aria-label="福瑞相册分类">
+              <p>ALBUM INDEX</p>
+              <ul>
+                <li><a href="#album-luoqian-02"><span>01</span><strong>落茜聚第二届</strong><small>含大合照</small></a></li>
+                <li><a href="#album-shouxingji-02"><span>02</span><strong>兽行迹第二届</strong><small>含大合照</small></a></li>
+                <li><a href="#album-luoqian-01"><span>03</span><strong>落茜聚第一届</strong><small>含大合照</small></a></li>
+                <li><a href="#album-shouxingji-01"><span>04</span><strong>兽行迹第一届</strong><small>含大合照</small></a></li>
+              </ul>
             </div>
+            <section class="gallery-album" aria-labelledby="album-luoqian-02">
+              <div class="gallery-album-heading">
+                <p>01 / FURRY MEET</p>
+                <h3 id="album-luoqian-02">落茜聚第二届</h3>
+                <p><span data-photo-count="luoqian-02,luoqian-02-group">0</span> 张</p>
+              </div>
+              <div class="gallery-photo-group">
+                <p>大合照</p>
+                <div class="gallery-grid" data-photo-grid="luoqian-02-group"></div>
+              </div>
+              <div class="gallery-photo-group">
+                <p>作品</p>
+                <div class="gallery-grid" data-photo-grid="luoqian-02"></div>
+              </div>
+            </section>
+
+            <section class="gallery-album" aria-labelledby="album-shouxingji-02">
+              <div class="gallery-album-heading">
+                <p>02 / FURRY MEET</p>
+                <h3 id="album-shouxingji-02">兽行迹第二届</h3>
+                <p><span data-photo-count="shouxingji-02,shouxingji-02-group">0</span> 张</p>
+              </div>
+              <div class="gallery-photo-group">
+                <p>大合照</p>
+                <div class="gallery-grid" data-photo-grid="shouxingji-02-group"></div>
+              </div>
+              <div class="gallery-photo-group">
+                <p>作品</p>
+                <div class="gallery-grid" data-photo-grid="shouxingji-02"></div>
+              </div>
+            </section>
+
+            <section class="gallery-album" aria-labelledby="album-luoqian-01">
+              <div class="gallery-album-heading">
+                <p>03 / FURRY MEET</p>
+                <h3 id="album-luoqian-01">落茜聚第一届</h3>
+                <p><span data-photo-count="luoqian-01,luoqian-01-group">0</span> 张</p>
+              </div>
+              <div class="gallery-photo-group">
+                <p>大合照</p>
+                <div class="gallery-grid" data-photo-grid="luoqian-01-group"></div>
+              </div>
+              <div class="gallery-photo-group">
+                <p>作品</p>
+                <div class="gallery-grid" data-photo-grid="luoqian-01"></div>
+              </div>
+            </section>
+
+            <section class="gallery-album" aria-labelledby="album-shouxingji-01">
+              <div class="gallery-album-heading">
+                <p>04 / FURRY MEET</p>
+                <h3 id="album-shouxingji-01">兽行迹第一届</h3>
+                <p><span data-photo-count="shouxingji-01,shouxingji-01-group">0</span> 张</p>
+              </div>
+              <div class="gallery-photo-group">
+                <p>大合照</p>
+                <div class="gallery-grid" data-photo-grid="shouxingji-01-group"></div>
+              </div>
+              <div class="gallery-photo-group">
+                <p>作品</p>
+                <div class="gallery-grid" data-photo-grid="shouxingji-01"></div>
+              </div>
+            </section>
+            <noscript><p class="gallery-noscript">请启用 JavaScript 以浏览完整摄影作品。</p></noscript>
+          </section>
+
+          <section
+            class="gallery-panel"
+            id="aircraft"
+            role="tabpanel"
+            aria-labelledby="tab-aircraft"
+            data-gallery-panel="aircraft"
+            hidden
+          >
+            <div class="gallery-panel-heading">
+              <p class="section-number">03 / AIRCRAFT</p>
+              <h2>飞机</h2>
+              <p>照片正在持续更新w （仅部分精选照片）</p>
+            </div>
+            <div class="gallery-album-index" aria-label="飞机相册分类">
+              <p>ALBUM INDEX</p>
+              <ul>
+                <li><a href="#album-aircraft"><span>01</span><strong>飞机</strong></a></li>
+              </ul>
+            </div>
+            <section class="gallery-album" aria-labelledby="album-aircraft">
+              <div class="gallery-album-heading">
+                <p>01 / AIRCRAFT</p>
+                <h3 id="album-aircraft">飞机</h3>
+                <p><span data-photo-count="aircraft">0</span> 张</p>
+              </div>
+              <div class="gallery-grid" data-photo-grid="aircraft"></div>
+            </section>
+            <noscript><p class="gallery-noscript">请启用 JavaScript 以浏览完整摄影作品。</p></noscript>
           </section>
         </div>
       </section>
@@ -134,5 +257,63 @@
       <p>© <span data-year>2026</span> FurryFGG</p>
       <a href="index.html">返回个人主页</a>
     </footer>
+
+    <nav class="gallery-floating-index" data-gallery-floating-index aria-label="快速相册目录">
+      <p>目录</p>
+      <div data-floating-index-panel="landscape">
+        <a href="#album-landscape" title="风光">
+          <span class="gallery-floating-label">风光</span><span class="gallery-floating-short" aria-hidden="true">风</span>
+        </a>
+        <a href="#album-aerial" title="航拍">
+          <span class="gallery-floating-label">航拍</span><span class="gallery-floating-short" aria-hidden="true">航</span>
+        </a>
+      </div>
+      <div data-floating-index-panel="furry" hidden>
+        <a href="#album-luoqian-02" title="落茜聚第二届">
+          <span class="gallery-floating-label">落茜聚二</span><span class="gallery-floating-short" aria-hidden="true">落2</span>
+        </a>
+        <a href="#album-shouxingji-02" title="兽行迹第二届">
+          <span class="gallery-floating-label">兽行迹二</span><span class="gallery-floating-short" aria-hidden="true">兽2</span>
+        </a>
+        <a href="#album-luoqian-01" title="落茜聚第一届">
+          <span class="gallery-floating-label">落茜聚一</span><span class="gallery-floating-short" aria-hidden="true">落1</span>
+        </a>
+        <a href="#album-shouxingji-01" title="兽行迹第一届">
+          <span class="gallery-floating-label">兽行迹一</span><span class="gallery-floating-short" aria-hidden="true">兽1</span>
+        </a>
+      </div>
+      <div data-floating-index-panel="aircraft" hidden>
+        <a href="#album-aircraft" title="飞机">
+          <span class="gallery-floating-label">飞机</span><span class="gallery-floating-short" aria-hidden="true">机</span>
+        </a>
+      </div>
+      <button class="gallery-floating-top" type="button" data-gallery-back-to-top>
+        返回标签页最上方
+      </button>
+    </nav>
+
+    <dialog class="photo-lightbox" data-photo-lightbox aria-label="全屏照片浏览">
+      <div class="photo-lightbox-brand" aria-hidden="true">
+        <strong>FurryFGG</strong>
+        <span></span>
+      </div>
+      <p class="photo-lightbox-counter" data-lightbox-counter aria-live="polite"></p>
+      <button class="photo-lightbox-media" type="button" data-lightbox-media aria-label="退出全屏照片">
+        <img data-lightbox-image alt="" draggable="false" />
+        <span class="photo-lightbox-name" data-lightbox-name aria-live="polite">
+          <span data-lightbox-filename></span>
+          <time data-lightbox-time hidden></time>
+        </span>
+      </button>
+      <button class="photo-lightbox-nav photo-lightbox-prev" type="button" data-lightbox-prev aria-label="上一张照片">
+        <span aria-hidden="true">←</span>
+      </button>
+      <button class="photo-lightbox-nav photo-lightbox-next" type="button" data-lightbox-next aria-label="下一张照片">
+        <span aria-hidden="true">→</span>
+      </button>
+      <button class="photo-lightbox-close" type="button" data-lightbox-close aria-label="关闭全屏照片">
+        <span aria-hidden="true">×</span>
+      </button>
+    </dialog>
   </body>
 </html>

@@ -18,10 +18,15 @@
     <title>FurryFGG 风光狗的个人网站 Owk</title>
     <link rel="canonical" href="https://furryfgg.com/" />
     <link rel="manifest" href="site.webmanifest" />
+    <script>document.documentElement.classList.add("has-js");</script>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body data-page="home">
+    <div class="page-intro" data-page-intro aria-hidden="true">
+      <p class="page-intro-mark"><span>FurryFGG</span><i></i></p>
+    </div>
+
     <a class="skip-link" href="#main">跳到主要内容</a>
 
     <header class="site-header" data-header>
@@ -68,7 +73,7 @@
               <a class="button button-secondary" href="#about">认识一下</a>
             </div>
           </div>
-          <p class="hero-watermark" aria-hidden="true">OWK</p>
+          <p class="hero-watermark" aria-hidden="true">汪</p>
         </div>
 
         <a class="scroll-cue" href="#about" aria-label="向下查看关于我">
@@ -110,35 +115,58 @@
               <p class="section-number">02 / PHOTOGRAPHY</p>
               <h2 id="photo-title">光落下来的地方。</h2>
             </div>
-            <p>作品集正在整理，第一批照片会从风光、聚会与航拍开始。</p>
+            <p>作品集正在持续更新喔~</p>
           </div>
 
-          <div class="photo-grid" aria-label="摄影作品占位">
-            <article class="photo-slot photo-slot-feature reveal">
+          <div class="photo-grid" aria-label="摄影作品精选封面">
+            <a
+              class="photo-slot photo-slot-feature has-cover reveal"
+              href="gallery.html#album-landscape"
+              aria-label="查看风光摄影作品"
+            >
+              <span class="photo-cover photo-cover-slideshow" aria-hidden="true">
+                <img src="assets/images/home/landscape-01.jpg" alt="" loading="lazy" decoding="async" />
+                <img src="assets/images/home/landscape-02.jpg" alt="" loading="lazy" decoding="async" />
+                <img src="assets/images/home/landscape-03.jpg" alt="" loading="lazy" decoding="async" />
+              </span>
               <span class="photo-index">01</span>
               <div>
                 <p>LANDSCAPE</p>
                 <h3>风光</h3>
               </div>
-            </article>
-            <article class="photo-slot photo-slot-warm reveal">
+            </a>
+            <a
+              class="photo-slot photo-slot-warm has-cover reveal"
+              href="gallery.html#furry"
+              aria-label="查看兽聚摄影作品"
+            >
+              <span class="photo-cover" aria-hidden="true">
+                <img src="assets/images/home/furry-meet.jpg" alt="" loading="lazy" decoding="async" />
+              </span>
               <span class="photo-index">02</span>
               <div>
-                <p>GATHERINGS</p>
-                <h3>聚会</h3>
+                <p>FURRY MEETS</p>
+                <h3>兽聚</h3>
               </div>
-            </article>
-            <article class="photo-slot photo-slot-dark reveal">
+            </a>
+            <a
+              class="photo-slot photo-slot-dark has-cover reveal"
+              href="gallery.html#album-aerial"
+              aria-label="查看航拍摄影作品"
+            >
+              <span class="photo-cover" aria-hidden="true">
+                <img src="assets/images/home/aerial.jpg" alt="" loading="lazy" decoding="async" />
+              </span>
               <span class="photo-index">03</span>
               <div>
                 <p>AERIAL</p>
                 <h3>航拍</h3>
               </div>
-            </article>
+            </a>
           </div>
 
           <div class="photo-footer reveal">
-            <p class="coming-note"><span></span> NEXT ROLL IS DEVELOPING</p>
+            <p class="coming-note"><span></span> GALLERY KEEPS GROWING</p>
             <a class="more-link" href="gallery.html">更多作品 <span aria-hidden="true">→</span></a>
           </div>
         </div>
@@ -167,7 +195,7 @@
               </div>
               <div>
                 <dt>地址</dt>
-                <dd>https://furryfgg.com</dd>
+                <dd>https://www.furryfgg.com.cn</dd>
               </div>
               <div>
                 <dt>简介</dt>
@@ -197,7 +225,7 @@
 
     <footer class="site-footer">
       <p>© <span data-year>2026</span> FurryFGG</p>
-      <p>Made with light, curiosity and Owk.</p>
+      <p>汪呜汪呜，汪汪汪汪汪！</p>
     </footer>
   </body>
 </html>

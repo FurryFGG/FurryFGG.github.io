@@ -4,8 +4,12 @@
 狗啃饼干.png
 我钱呢.png
 友链背景.png
+相册/
+tools/
+publish/
 
 # Local development files.
 .DS_Store
 Thumbs.db
 .vscode/
+.qa-*.png
